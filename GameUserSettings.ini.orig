@@ -3,7 +3,7 @@ ShowMapPlayerLocation=True
 AllowThirdPersonPlayer=True
 ServerCrosshair=True
 ServerPassword=taroisgod
-ServerAdminPassword=qawsedrftgyhujikolp
+ServerAdminPassword=1qazse4rfvgy7
 RCONEnabled=True
 RCONPort=32330
 TheMaxStructuresInRange=10500.000000
@@ -25,13 +25,6 @@ MaxTamedDinos=5000.000000
 ItemStackSizeMultiplier=1.000000
 RCONServerGameLogBuffer=600.000000
 AllowHitMarkers=True
-OverrideOfficialDifficulty=5.000000
-TamingSpeedMultiplier=20.000000
-NightTimeSpeedScale=5.000000
-HarvestAmountMultiplier=1.200000
-serverPVE=1
-DisableDinoDecayPvE=true
-DisableStructureDecayPvE=true
 
 [/Script/ShooterGame.ShooterGameUserSettings]
 MasterAudioVolume=1.000000
@@ -191,7 +184,6 @@ bUseDesktopResolutionForFullscreen=False
 FullscreenMode=2
 LastConfirmedFullscreenMode=2
 Version=5
-CameraShakeScale=0.500000
 
 [ScalabilityGroups]
 sg.ResolutionQuality=100
