@@ -16,7 +16,7 @@ services:
       - ark:/ark
     environment:
       SESSIONNAME: kuroneko_park
-      ADMINPASSWORD: 1qazse4rfvgy7
+      ADMINPASSWORD: qawsedrftgyhujikolp
       SERVERPASSWORD: taroisgod
       TZ: Asia/Tokyo
 
