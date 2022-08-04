@@ -2,23 +2,33 @@ version: '3.7'
 services:
   ark:
     image: turzam/ark
-    container_name: ark_server
+    container_name: ark-crystal-isles
     ports:
-      - "7777:7777"
-      - "7777:7777/udp"
-      - "7778:7778"
-      - "7778:7778/udp"
-      - "27015:27015"
-      - "27015:27015/udp"
-      - "32330:32330"
+      - "7779:7779"
+      - "7779:7779/udp"
+      - "7780:7780"
+      - "7780:7780/udp"
+      - "27016:27016"
+      - "27016:27016/udp"
+      - "32331:32330"
     restart: always
     volumes:
-      - ark:/ark
+      - /mnt/ark-crystal-isles:/ark
+      - /mnt/ark-crystal-isles-root:/root
     environment:
+      SERVERMAP: CrystalIsles
       SESSIONNAME: kuroneko_park
-      ADMINPASSWORD: qawsedrftgyhujikolp
+      ADMINPASSWORD: 1qazse4rfvgy7
       SERVERPASSWORD: taroisgod
+      SERVERPORT: 27016
+      STEAMPORT: 7780
       TZ: Asia/Tokyo
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse:/dev/fuse:rwm
+    entrypoint: >
+      sh -c "
+        sh /root/container-init.sh && /home/steam/user.sh
+      "
 
-volumes:
-  ark:
